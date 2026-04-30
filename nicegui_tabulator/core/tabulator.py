@@ -84,10 +84,9 @@ class Tabulator(
         return self._props["options"]["data"]
         
     @data.setter
-    def data_setter(self, data: List[Dict]):
+    def data(self, data: List[Dict]):
         """Set the data for the tabulator table."""
         self._props["options"]["data"] = data
-        return self
         
     def delete(self) -> None:
         for tp in self._teleport_slots_cache.values():
